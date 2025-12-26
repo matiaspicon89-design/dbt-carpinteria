@@ -10,7 +10,7 @@ SELECT
     SUM(sale_price) AS ingresos_totales,
     COUNT(*) AS cantidad_pedidos
 FROM pedidos
-WHERE status = 'Complete'
+WHERE status is not null
 GROUP BY 1
 ORDER BY 1 DESC
 

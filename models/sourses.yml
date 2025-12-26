@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: thelook_ecommerce  # Este es el nombre que dbt buscará
+    database: bigquery-public-data # El proyecto de Google
+    schema: thelook_ecommerce      # El conjunto de datos
+    tables:
+      - name: order_items          # La tabla específica
